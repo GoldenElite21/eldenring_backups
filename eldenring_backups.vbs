@@ -1,7 +1,8 @@
 Option Explicit
 
-Dim objShell, saveDirectory, backupDirectory, folder, saveFilePath
-Dim latestBackup, lastModifiedTime, currentModifiedTime, fso, folderObj, backupFilePath, timestamp, scriptPath, scriptFolder
+Dim objShell, fso, saveDirectory, backupDirectory, folder, saveFilePath, scriptPath, scriptFolder
+Dim latestBackup, lastModifiedTime, currentModifiedTime, folderObj, backupFilePath, timestamp
+
 Set objShell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
